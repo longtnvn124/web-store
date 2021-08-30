@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="eCommerce HTML Template Free Download" name="keywords">
+        <meta content="eCommerce HTML Template Free Download" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+
+        
+        <!-- Nav Bar Start -->
+        <div class="nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link active">TRANG CHỦ</a>
+                            <a href="product-list.html" class="nav-item nav-link">SẢN PHẨM </a>
+                            
+                            <a href="cart.html" class="nav-item nav-link">GIỎ HÀNG</a>
+                            <a href="checkout.html" class="nav-item nav-link">THANH TOÁN</a>
+                            <a href="my-account.html" class="nav-item nav-link">TÀI KHOẢN CỦA TÔI</a>
+                            
+                            </div>
+                        </div>
+                        <div class="navbar-nav ml-auto">
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">TÀI KHOẢN NGƯỜI DÙNG </a>
+                                <div class="dropdown-menu">
+                                    <a href="login.html" class="dropdown-item">Đăng nhập</a>
+                                    <a href="register.html" class="dropdown-item">Đăng ký</a>
+                                </div>
+                            </div>
+                        </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->        
+        
+        <!-- Bottom Bar Start -->
+        <div class="bottom-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href="index.html">
+                                <h3>SPK</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="search">
+                            <input type="text" placeholder="Tìm kiếm">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="user">
+                            <a href="#" class="btn wishlist">
+                                <i class="fa fa-heart"></i>
+                                <span>(0)</span>
+                            </a>
+                            <a href="cart.html" class="btn cart">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span>(0)</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar End --> 
+        
+        <!-- Breadcrumb Start -->
+        <div class="breadcrumb-wrap">
+            <div class="container-fluid">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                
+                    <li class="breadcrumb-item active">Đăng nhập và đăng ký</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb End -->
+        
+        <!-- Login Start -->
+        <div class="login">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">    
+                        <div class="register-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Họ</label>
+                                    <input class="form-control" type="text" placeholder="Nhập họ">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Tên</label>
+                                    <input class="form-control" type="text" placeholder="Nhập tên">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>E-mail</label>
+                                    <input class="form-control" type="text" placeholder="E-mail">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Số điện thoại</label>
+                                    <input class="form-control" type="text" placeholder="Nhập số điện thoại">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Mật khẩu</label>
+                                    <input class="form-control" type="text" placeholder="Nhập mật khẩu">
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <label>Xác nhận mật khẩu</label>
+                                  <input class="form-control" type="text" placeholder="Nhập lại mật khẩu">
+                                
+                                </div>
+                                <div class="col-md-12">
+                                
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="newaccount">
+                                        <label class="custom-control-label" for="newaccount">Hiển thị mật khẩu</label>
+                                    </div>
+                                
+                                </div>
+                                <div class="col-md-12">
+                                    
+									<input type="button" id="btn" value="Đăng Ký"/>
+        <script language="javascript">
+            var button = document.getElementById("btn");
+            button.onclick = function(){
+                alert("Bạn đã đăng ký thành công");
+            }
+        </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+        </div>
+        <!-- Login End -->
+        
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Liên Hệ</h2>
+                            <div class="contact-info">
+                                <p><i class="fa fa-map-marker"></i>Đường Hoàng Ngân - Phan Đình Phùng - TP.Thái Nguyên</p>
+                                <p><i class="fa fa-envelope"></i>spk1122tore@gmail.com</p>
+                                <p><i class="fa fa-phone"></i>01638981059</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Theo Dõi Tôi</h2>
+                            <div class="contact-info">
+                                <div class="social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Thông tin của hàng</h2>
+                            <ul>
+                                <li><a href="#">Về chúng tôi</a></li>
+                                <li><a href="#">Chính sách bảo mật</a></li>
+                                <li><a href="#">Điều khoản và dịch vụ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Thông tin mua hàng</h2>
+                            <ul>
+                                <li><a href="#">Chính sách thanh toán</a></li>
+                                <li><a href="#">Chính sách vận chuyển</a></li>
+                                <li><a href="#">Chính sách hoàn trả</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row payment align-items-center">
+                    <div class="col-md-6">
+                        <div class="payment-method">
+                            <h2>Chấp nhận thanh toán</h2>
+                            <img src="img/payment-method.png" alt="Payment Method" />
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Footer Bottom Start -->
+        <div class="footer-bottom">
+            <div class="container">
+               
+            </div>
+        </div>
+        <!-- Footer Bottom End -->       
+        
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
